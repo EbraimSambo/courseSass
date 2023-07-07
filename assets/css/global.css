@@ -1,0 +1,13 @@
+h2 {
+  color: #0adf14;
+}
+
+.main {
+  display: flex;
+  justify-content: true;
+}
+.main .main__p {
+  color: red;
+}
+
+/*# sourceMappingURL=global.css.map */

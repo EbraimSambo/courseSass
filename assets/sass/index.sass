@@ -1,0 +1,21 @@
+@use 'variables'
+
+@function color($w)
+    @return map-get(variables.$colors, $w)
+
+@mixin flex($value:true)
+    display: flex
+    @if $value
+        justify-content: $value
+    @else 
+        justify-content: center
+
+h2
+    color: map-get(variables.$colors, color)
+
+.main
+    @include flex()
+    #{&}__p
+        color: color(color2)
+
+
